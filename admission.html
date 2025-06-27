@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - EduTech Institute</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-mortarboard-fill me-2"></i>EduTech Institute
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="admission.html">Admission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mb-3">Admission Process</h1>
+                    <p class="lead">Start your journey with us in just a few simple steps</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Steps -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">How to Apply</h2>
+                    <p class="lead text-muted">Follow these simple steps to begin your learning journey</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <span class="h3 mb-0">1</span>
+                        </div>
+                        <h5 class="fw-bold">Choose Your Course</h5>
+                        <p class="text-muted">Browse our course catalog and select the program that matches your career goals.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="step-number bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <span class="h3 mb-0">2</span>
+                        </div>
+                        <h5 class="fw-bold">Submit Application</h5>
+                        <p class="text-muted">Complete our online application form with your personal and educational details.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="step-number bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <span class="h3 mb-0">3</span>
+                        </div>
+                        <h5 class="fw-bold">Interview & Assessment</h5>
+                        <p class="text-muted">Participate in a brief interview and complete a skill assessment test.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="step-number bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <span class="h3 mb-0">4</span>
+                        </div>
+                        <h5 class="fw-bold">Start Learning</h5>
+                        <p class="text-muted">Once accepted, complete your enrollment and begin your educational journey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-header bg-primary text-white text-center py-4">
+                            <h3 class="mb-0"><i class="bi bi-person-plus-fill me-2"></i>Online Registration Form</h3>
+                        </div>
+                        <div class="card-body p-5">
+                            <form id="registrationForm" novalidate>
+                                <!-- Personal Information -->
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h5 class="fw-bold text-primary mb-3">Personal Information</h5>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label">First Name *</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                        <div class="invalid-feedback">Please provide your first name.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label">Last Name *</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                        <div class="invalid-feedback">Please provide your last name.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="invalid-feedback">Please provide a valid email address.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Phone Number *</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                        <div class="invalid-feedback">Please provide your phone number.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="dateOfBirth" class="form-label">Date of Birth *</label>
+                                        <input type="date" class="form-control" id="dateOfBirth" required>
+                                        <div class="invalid-feedback">Please provide your date of birth.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="gender" class="form-label">Gender</label>
+                                        <select class="form-select" id="gender">
+                                            <option value="">Select Gender</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Other</option>
+                                            <option value="prefer-not-to-say">Prefer not to say</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Address Information -->
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h5 class="fw-bold text-primary mb-3">Address Information</h5>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="address" class="form-label">Street Address *</label>
+                                        <input type="text" class="form-control" id="address" required>
+                                        <div class="invalid-feedback">Please provide your address.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="city" class="form-label">City *</label>
+                                        <input type="text" class="form-control" id="city" required>
+                                        <div class="invalid-feedback">Please provide your city.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="state" class="form-label">State/Province *</label>
+                                        <input type="text" class="form-control" id="state" required>
+                                        <div class="invalid-feedback">Please provide your state/province.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="zipCode" class="form-label">ZIP/Postal Code *</label>
+                                        <input type="text" class="form-control" id="zipCode" required>
+                                        <div class="invalid-feedback">Please provide your ZIP/postal code.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="country" class="form-label">Country *</label>
+                                        <select class="form-select" id="country" required>
+                                            <option value="">Select Country</option>
+                                            <option value="us">United States</option>
+                                            <option value="ca">Canada</option>
+                                            <option value="uk">United Kingdom</option>
+                                            <option value="au">Australia</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select your country.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Educational Background -->
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h5 class="fw-bold text-primary mb-3">Educational Background</h5>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="education" class="form-label">Highest Education Level *</label>
+                                        <select class="form-select" id="education" required>
+                                            <option value="">Select Education Level</option>
+                                            <option value="high-school">High School</option>
+                                            <option value="associates">Associate's Degree</option>
+                                            <option value="bachelors">Bachelor's Degree</option>
+                                            <option value="masters">Master's Degree</option>
+                                            <option value="phd">PhD</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select your education level.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="workExperience" class="form-label">Work Experience</label>
+                                        <select class="form-select" id="workExperience">
+                                            <option value="">Select Experience Level</option>
+                                            <option value="0-1">0-1 years</option>
+                                            <option value="2-5">2-5 years</option>
+                                            <option value="6-10">6-10 years</option>
+                                            <option value="10+">10+ years</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Course Selection -->
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h5 class="fw-bold text-primary mb-3">Course Selection</h5>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="course" class="form-label">Preferred Course *</label>
+                                        <select class="form-select" id="course" required>
+                                            <option value="">Select a Course</option>
+                                            <option value="webdev">Full Stack Web Development</option>
+                                            <option value="datascience">Data Science & Analytics</option>
+                                            <option value="marketing">Digital Marketing Mastery</option>
+                                            <option value="mobile">Mobile App Development</option>
+                                            <option value="design">UX/UI Design</option>
+                                            <option value="ml">Machine Learning & AI</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select a course.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="startDate" class="form-label">Preferred Start Date *</label>
+                                        <select class="form-select" id="startDate" required>
+                                            <option value="">Select Start Date</option>
+                                            <option value="2024-03-01">March 1, 2024</option>
+                                            <option value="2024-04-01">April 1, 2024</option>
+                                            <option value="2024-05-01">May 1, 2024</option>
+                                            <option value="2024-06-01">June 1, 2024</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select a start date.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="schedule" class="form-label">Schedule Preference *</label>
+                                        <select class="form-select" id="schedule" required>
+                                            <option value="">Select Schedule</option>
+                                            <option value="full-time">Full-time (40 hours/week)</option>
+                                            <option value="part-time-evening">Part-time (Evenings)</option>
+                                            <option value="part-time-weekend">Part-time (Weekends)</option>
+                                            <option value="flexible">Flexible Schedule</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select your schedule preference.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="learningMode" class="form-label">Learning Mode *</label>
+                                        <select class="form-select" id="learningMode" required>
+                                            <option value="">Select Learning Mode</option>
+                                            <option value="online">Online</option>
+                                            <option value="in-person">In-Person</option>
+                                            <option value="hybrid">Hybrid</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select your learning mode preference.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Additional Information -->
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <h5 class="fw-bold text-primary mb-3">Additional Information</h5>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="motivation" class="form-label">Why do you want to join this course? *</label>
+                                        <textarea class="form-control" id="motivation" rows="4" required placeholder="Tell us about your goals and motivation..."></textarea>
+                                        <div class="invalid-feedback">Please share your motivation for joining this course.</div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="experience" class="form-label">Previous Experience (Optional)</label>
+                                        <textarea class="form-control" id="experience" rows="3" placeholder="Describe any relevant experience or skills you have..."></textarea>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="hearAbout" class="form-label">How did you hear about us?</label>
+                                        <select class="form-select" id="hearAbout">
+                                            <option value="">Select an option</option>
+                                            <option value="google">Google Search</option>
+                                            <option value="social-media">Social Media</option>
+                                            <option value="friend">Friend/Family</option>
+                                            <option value="advertisement">Advertisement</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Terms and Conditions -->
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="terms" required>
+                                            <label class="form-check-label" for="terms">
+                                                I agree to the <a href="#" class="text-primary">Terms and Conditions</a> and <a href="#" class="text-primary">Privacy Policy</a> *
+                                            </label>
+                                            <div class="invalid-feedback">You must agree to the terms and conditions.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                I would like to receive updates and newsletters from EduTech Institute
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                                        <i class="bi bi-send-fill me-2"></i>Submit Application
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Dates -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">Important Dates</h2>
+                    <p class="lead text-muted">Mark your calendar with these important deadlines</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-calendar-event text-primary display-4 mb-3"></i>
+                            <h5 class="card-title">Spring 2024</h5>
+                            <p class="text-muted">Application Deadline: Feb 15, 2024</p>
+                            <p class="text-muted">Start Date: March 1, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-calendar-event text-success display-4 mb-3"></i>
+                            <h5 class="card-title">Summer 2024</h5>
+                            <p class="text-muted">Application Deadline: May 15, 2024</p>
+                            <p class="text-muted">Start Date: June 1, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-calendar-event text-warning display-4 mb-3"></i>
+                            <h5 class="card-title">Fall 2024</h5>
+                            <p class="text-muted">Application Deadline: Aug 15, 2024</p>
+                            <p class="text-muted">Start Date: Sep 1, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-calendar-event text-info display-4 mb-3"></i>
+                            <h5 class="card-title">Winter 2025</h5>
+                            <p class="text-muted">Application Deadline: Nov 15, 2024</p>
+                            <p class="text-muted">Start Date: Jan 1, 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-center mb-5">Frequently Asked Questions</h2>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                    What are the admission requirements?
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Basic requirements include a high school diploma or equivalent, basic computer literacy, and a commitment to learning. Some advanced courses may have additional prerequisites.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                    Can I apply for financial aid or payment plans?
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer various financial aid options including scholarships, payment plans, and income share agreements. Contact our financial aid office for more information.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                    How long does the admission process take?
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The admission process typically takes 1-2 weeks from application submission to final decision. This includes application review, interview, and skill assessment.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                    Do you offer online courses?
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer online, in-person, and hybrid learning options for most of our courses. You can choose the format that best fits your schedule and learning style.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                                    What support is available for students?
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We provide comprehensive support including academic advisors, career counseling, technical support, and peer mentoring programs to ensure your success.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Support -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-gradient-primary text-white rounded-3 p-5 text-center">
+                        <h2 class="display-5 fw-bold mb-3">Need Help with Your Application?</h2>
+                        <p class="lead mb-4">Our admission counselors are here to help you every step of the way</p>
+                        <div class="row g-3 justify-content-center">
+                            <div class="col-auto">
+                                <a href="contact.html" class="btn btn-warning btn-lg px-4">
+                                    <i class="bi bi-telephone-fill me-2"></i>Contact Support
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="mailto:admissions@edutechinstitute.com" class="btn btn-outline-light btn-lg px-4">
+                                    <i class="bi bi-envelope-fill me-2"></i>Email Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-mortarboard-fill me-2"></i>EduTech Institute
+                    </h5>
+                    <p class="text-light">Empowering students with quality education and practical skills for successful careers in technology and beyond.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="courses.html" class="text-light text-decoration-none">Courses</a></li>
+                        <li><a href="admission.html" class="text-light text-decoration-none">Admission</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Popular Courses</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="courses.html" class="text-light text-decoration-none">Web Development</a></li>
+                        <li><a href="courses.html" class="text-light text-decoration-none">Data Science</a></li>
+                        <li><a href="courses.html" class="text-light text-decoration-none">Digital Marketing</a></li>
+                        <li><a href="courses.html" class="text-light text-decoration-none">Mobile Development</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="text-light mb-2"><i class="bi bi-geo-alt-fill me-2"></i>123 Education Street, Tech City, TC 12345</p>
+                    <p class="text-light mb-2"><i class="bi bi-telephone-fill me-2"></i>(555) 123-4567</p>
+                    <p class="text-light mb-2"><i class="bi bi-envelope-fill me-2"></i>info@edutechinstitute.com</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-light mb-0">&copy; 2024 EduTech Institute. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

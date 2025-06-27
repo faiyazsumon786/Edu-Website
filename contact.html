@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EduTech Institute</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-mortarboard-fill me-2"></i>EduTech Institute
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admission.html">Admission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
+                    <p class="lead">Get in touch with our team - we're here to help!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-geo-alt-fill text-primary display-4 mb-3"></i>
+                            <h5 class="card-title">Visit Us</h5>
+                            <p class="card-text">123 Education Street<br>Tech City, TC 12345<br>United States</p>
+                            <a href="#map" class="btn btn-outline-primary">View on Map</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-telephone-fill text-success display-4 mb-3"></i>
+                            <h5 class="card-title">Call Us</h5>
+                            <p class="card-text">Main: (555) 123-4567<br>Admissions: (555) 123-4568<br>Support: (555) 123-4569</p>
+                            <a href="tel:+15551234567" class="btn btn-outline-success">Call Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <i class="bi bi-envelope-fill text-warning display-4 mb-3"></i>
+                            <h5 class="card-title">Email Us</h5>
+                            <p class="card-text">info@edutechinstitute.com<br>admissions@edutechinstitute.com<br>support@edutechinstitute.com</p>
+                            <a href="mailto:info@edutechinstitute.com" class="btn btn-outline-warning">Send Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-header bg-primary text-white text-center py-4">
+                            <h3 class="mb-0"><i class="bi bi-chat-dots-fill me-2"></i>Send us a Message</h3>
+                        </div>
+                        <div class="card-body p-5">
+                            <form id="contactForm" novalidate>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactName" class="form-label">Full Name *</label>
+                                        <input type="text" class="form-control" id="contactName" required>
+                                        <div class="invalid-feedback">Please provide your name.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactEmail" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="contactEmail" required>
+                                        <div class="invalid-feedback">Please provide a valid email.</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactPhone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="contactPhone">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactSubject" class="form-label">Subject *</label>
+                                        <select class="form-select" id="contactSubject" required>
+                                            <option value="">Select a subject</option>
+                                            <option value="general">General Inquiry</option>
+                                            <option value="admission">Admission Information</option>
+                                            <option value="course">Course Information</option>
+                                            <option value="technical">Technical Support</option>
+                                            <option value="partnership">Partnership Opportunities</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select a subject.</div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactMessage" class="form-label">Message *</label>
+                                    <textarea class="form-control" id="contactMessage" rows="5" required placeholder="Please provide details about your inquiry..."></textarea>
+                                    <div class="invalid-feedback">Please provide your message.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="contactConsent" required>
+                                        <label class="form-check-label" for="contactConsent">
+                                            I consent to being contacted by EduTech Institute regarding my inquiry *
+                                        </label>
+                                        <div class="invalid-feedback">Please provide your consent.</div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                                        <i class="bi bi-send-fill me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5" id="map">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">Find Us</h2>
+                    <p class="lead text-muted">Located in the heart of Tech City</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-0">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.123456789!2d-74.0059413!3d40.7127837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjAiTiA3NMKwMDAnMjEuNCJX!5e0!3m2!1sen!2sus!4v1234567890123"
+                                width="100%" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Hours -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">Office Hours</h2>
+                    <p class="lead text-muted">When you can reach us</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-clock-fill text-primary display-4 mb-3"></i>
+                            <h5 class="card-title">Admissions Office</h5>
+                            <div class="text-start">
+                                <p class="mb-1"><strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM</p>
+                                <p class="mb-1"><strong>Saturday:</strong> 9:00 AM - 4:00 PM</p>
+                                <p class="mb-1"><strong>Sunday:</strong> Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-headset text-success display-4 mb-3"></i>
+                            <h5 class="card-title">Student Support</h5>
+                            <div class="text-start">
+                                <p class="mb-1"><strong>Monday - Friday:</strong> 7:00 AM - 10:00 PM</p>
+                                <p class="mb-1"><strong>Saturday - Sunday:</strong> 9:00 AM - 6:00 PM</p>
+                                <p class="mb-1"><strong>Emergency Support:</strong> 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">Follow Us</h2>
+                    <p class="lead text-muted">Stay connected with our community</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm text-center social-card">
+                        <div class="card-body p-4">
+                            <i class="bi bi-facebook text-primary display-4 mb-3"></i>
+                            <h5 class="card-title">Facebook</h5>
+                            <p class="card-text">Follow us for updates and community discussions</p>
+                            <a href="#" class="btn btn-outline-primary">Follow</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm text-center social-card">
+                        <div class="card-body p-4">
+                            <i class="bi bi-twitter text-info display-4 mb-3"></i>
+                            <h5 class="card-title">Twitter</h5>
+                            <p class="card-text">Get the latest news and industry insights</p>
+                            <a href="#" class="btn btn-outline-info">Follow</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm text-center social-card">
+                        <div class="card-body p-4">
+                            <i class="bi bi-linkedin text-primary display-4 mb-3"></i>
+                            <h5 class="card-title">LinkedIn</h5>
+                            <p class="card-text">Connect with our professional network</p>
+                            <a href="#" class="btn btn-outline-primary">Connect</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm text-center social-card">
+                        <div class="card-body p-4">
+                            <i class="bi bi-instagram text-danger display-4 mb-3"></i>
+                            <h5 class="card-title">Instagram</h5>
+                            <p class="card-text">See behind-the-scenes content and student life</p>
+                            <a href="#" class="btn btn-outline-danger">Follow</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign Up and Login Forms -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-header bg-success text-white text-center py-3">
+                            <h4 class="mb-0"><i class="bi bi-person-plus-fill me-2"></i>Sign Up</h4>
+                        </div>
+                        <div class="card-body p-4">
+                            <form id="signupForm" novalidate>
+                                <div class="mb-3">
+                                    <label for="signupName" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="signupName" required>
+                                    <div class="invalid-feedback">Please provide your name.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupEmail" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="signupEmail" required>
+                                    <div class="invalid-feedback">Please provide a valid email.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupPassword" class="form-label">Password *</label>
+                                    <input type="password" class="form-control" id="signupPassword" required minlength="8">
+                                    <div class="invalid-feedback">Password must be at least 8 characters long.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupConfirmPassword" class="form-label">Confirm Password *</label>
+                                    <input type="password" class="form-control" id="signupConfirmPassword" required>
+                                    <div class="invalid-feedback">Passwords do not match.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="signupTerms" required>
+                                        <label class="form-check-label" for="signupTerms">
+                                            I agree to the <a href="#" class="text-success">Terms of Service</a> *
+                                        </label>
+                                        <div class="invalid-feedback">You must agree to the terms.</div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-success w-100">
+                                    <i class="bi bi-person-plus-fill me-2"></i>Create Account
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-header bg-primary text-white text-center py-3">
+                            <h4 class="mb-0"><i class="bi bi-box-arrow-in-right me-2"></i>Login</h4>
+                        </div>
+                        <div class="card-body p-4">
+                            <form id="loginForm" novalidate>
+                                <div class="mb-3">
+                                    <label for="loginEmail" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="loginEmail" required>
+                                    <div class="invalid-feedback">Please provide a valid email.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginPassword" class="form-label">Password *</label>
+                                    <input type="password" class="form-control" id="loginPassword" required>
+                                    <div class="invalid-feedback">Please provide your password.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 mb-3">
+                                    <i class="bi bi-box-arrow-in-right me-2"></i>Login
+                                </button>
+                                <div class="text-center">
+                                    <a href="#" class="text-decoration-none">Forgot Password?</a>
+                                </div>
+                            </form>
+                            <hr class="my-4">
+                            <div class="text-center">
+                                <p class="text-muted mb-3">Or login with:</p>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-danger">
+                                        <i class="bi bi-google me-2"></i>Login with Google
+                                    </button>
+                                    <button class="btn btn-outline-primary">
+                                        <i class="bi bi-facebook me-2"></i>Login with Facebook
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-mortarboard-fill me-2"></i>EduTech Institute
+                    </h5>
+                    <p class="text-light">Empowering students with quality education and practical skills for successful careers in technology and beyond.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="courses.html" class="text-light text-decoration-none">Courses</a></li>
+                        <li><a href="admission.html" class="text-light text-decoration-none">Admission</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Popular Courses</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="courses.html" class="text-light text-decoration-none">Web Development</a></li>
+                        <li><a href="courses.html" class="text-light text-decoration-none">Data Science</a></li>
+                        <li><a href="courses.html" class="text-light text-decoration-none">Digital Marketing</a></li>
+                        <li><a href="courses.html" class="text-light text-decoration-none">Mobile Development</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="text-light mb-2"><i class="bi bi-geo-alt-fill me-2"></i>123 Education Street, Tech City, TC 12345</p>
+                    <p class="text-light mb-2"><i class="bi bi-telephone-fill me-2"></i>(555) 123-4567</p>
+                    <p class="text-light mb-2"><i class="bi bi-envelope-fill me-2"></i>info@edutechinstitute.com</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-light mb-0">&copy; 2024 EduTech Institute. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

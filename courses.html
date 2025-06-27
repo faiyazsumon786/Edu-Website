@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - EduTech Institute</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-mortarboard-fill me-2"></i>EduTech Institute
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admission.html">Admission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mb-3">Our Courses</h1>
+                    <p class="lead">Comprehensive programs designed for career success</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Filter -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                        <button class="btn btn-outline-primary active" data-filter="all">All Courses</button>
+                        <button class="btn btn-outline-primary" data-filter="development">Development</button>
+                        <button class="btn btn-outline-primary" data-filter="data">Data Science</button>
+                        <button class="btn btn-outline-primary" data-filter="marketing">Marketing</button>
+                        <button class="btn btn-outline-primary" data-filter="design">Design</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4" id="coursesGrid">
+                <!-- Web Development -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="development">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Web Development">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Development</span>
+                                <span class="badge bg-success">Popular</span>
+                            </div>
+                            <h5 class="card-title">Full Stack Web Development</h5>
+                            <p class="card-text">Master modern web technologies including HTML5, CSS3, JavaScript, React, Node.js, and database management.</p>
+                            <div class="course-info mb-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-clock text-primary"></i> Duration: 6 Months</span>
+                                    <span><i class="bi bi-people text-primary"></i> Students: 450+</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-calendar text-primary"></i> Part-time/Full-time</span>
+                                    <span><i class="bi bi-trophy text-primary"></i> Certificate</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-success mb-0">$1,299</span>
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <small class="text-muted">(4.9)</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#courseModal" data-course="webdev">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Science -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="data">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Data Science">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-info">Data Science</span>
+                                <span class="badge bg-warning">High Demand</span>
+                            </div>
+                            <h5 class="card-title">Data Science & Analytics</h5>
+                            <p class="card-text">Learn Python, machine learning, data visualization, and statistical analysis to become a data scientist.</p>
+                            <div class="course-info mb-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-clock text-primary"></i> Duration: 8 Months</span>
+                                    <span><i class="bi bi-people text-primary"></i> Students: 320+</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-calendar text-primary"></i> Part-time/Full-time</span>
+                                    <span><i class="bi bi-trophy text-primary"></i> Certificate</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-success mb-0">$1,599</span>
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <small class="text-muted">(4.8)</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#courseModal" data-course="datascience">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="marketing">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Digital Marketing">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-warning">Marketing</span>
+                                <span class="badge bg-success">Beginner Friendly</span>
+                            </div>
+                            <h5 class="card-title">Digital Marketing Mastery</h5>
+                            <p class="card-text">Master SEO, social media marketing, Google Ads, email marketing, and digital advertising strategies.</p>
+                            <div class="course-info mb-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-clock text-primary"></i> Duration: 4 Months</span>
+                                    <span><i class="bi bi-people text-primary"></i> Students: 280+</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-calendar text-primary"></i> Part-time/Full-time</span>
+                                    <span><i class="bi bi-trophy text-primary"></i> Certificate</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-success mb-0">$899</span>
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <small class="text-muted">(4.7)</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#courseModal" data-course="marketing">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile App Development -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="development">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Mobile Development">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Development</span>
+                                <span class="badge bg-info">New</span>
+                            </div>
+                            <h5 class="card-title">Mobile App Development</h5>
+                            <p class="card-text">Build native and cross-platform mobile apps using React Native, Flutter, and native iOS/Android development.</p>
+                            <div class="course-info mb-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-clock text-primary"></i> Duration: 7 Months</span>
+                                    <span><i class="bi bi-people text-primary"></i> Students: 180+</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-calendar text-primary"></i> Part-time/Full-time</span>
+                                    <span><i class="bi bi-trophy text-primary"></i> Certificate</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-success mb-0">$1,499</span>
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <small class="text-muted">(4.9)</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#courseModal" data-course="mobile">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UX/UI Design -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="design">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="UX/UI Design">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-secondary">Design</span>
+                                <span class="badge bg-success">Creative</span>
+                            </div>
+                            <h5 class="card-title">UX/UI Design</h5>
+                            <p class="card-text">Learn user experience design, interface design, prototyping, and design thinking methodologies.</p>
+                            <div class="course-info mb-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-clock text-primary"></i> Duration: 5 Months</span>
+                                    <span><i class="bi bi-people text-primary"></i> Students: 240+</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-calendar text-primary"></i> Part-time/Full-time</span>
+                                    <span><i class="bi bi-trophy text-primary"></i> Certificate</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-success mb-0">$1,199</span>
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <small class="text-muted">(4.6)</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#courseModal" data-course="design">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="data">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <img src="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Machine Learning">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-info">Data Science</span>
+                                <span class="badge bg-danger">Advanced</span>
+                            </div>
+                            <h5 class="card-title">Machine Learning & AI</h5>
+                            <p class="card-text">Advanced machine learning algorithms, deep learning, neural networks, and artificial intelligence applications.</p>
+                            <div class="course-info mb-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-clock text-primary"></i> Duration: 10 Months</span>
+                                    <span><i class="bi bi-people text-primary"></i> Students: 150+</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="bi bi-calendar text-primary"></i> Full-time</span>
+                                    <span><i class="bi bi-trophy text-primary"></i> Certificate</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-success mb-0">$1,899</span>
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <small class="text-muted">(4.9)</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#courseModal" data-course="ml">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Requirements -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-center mb-5">Enrollment Requirements</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center p-4">
+                                    <i class="bi bi-person-check-fill text-primary display-4 mb-3"></i>
+                                    <h5 class="card-title">General Requirements</h5>
+                                    <ul class="list-unstyled text-start">
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>High school diploma or equivalent</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Basic computer literacy</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Commitment to learning</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>English proficiency</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center p-4">
+                                    <i class="bi bi-laptop text-warning display-4 mb-3"></i>
+                                    <h5 class="card-title">Technical Requirements</h5>
+                                    <ul class="list-unstyled text-start">
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Computer with internet access</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Webcam for virtual sessions</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Headset or speakers</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Modern web browser</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-gradient-primary text-white rounded-3 p-5 text-center">
+                        <h2 class="display-5 fw-bold mb-3">Ready to Start Learning?</h2>
+                        <p class="lead mb-4">Join thousands of students who have transformed their careers with our programs</p>
+                        <a href="admission.html" class="btn btn-warning btn-lg px-4 me-3">Apply Now</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg px-4">Get More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Detail Modal -->
+    <div class="modal fade" id="courseModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="courseModalLabel">Course Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="courseModalContent">
+                    <!-- Content will be loaded dynamically -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="admission.html" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-mortarboard-fill me-2"></i>EduTech Institute
+                    </h5>
+                    <p class="text-light">Empowering students with quality education and practical skills for successful careers in technology and beyond.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="courses.html" class="text-light text-decoration-none">Courses</a></li>
+                        <li><a href="admission.html" class="text-light text-decoration-none">Admission</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Popular Courses</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="courses.html" class="text-light text-decoration-none">Web Development</a></li>
+                        <li><a href="courses.html" class="text-light text-decoration-none">Data Science</a></li>
+                        <li><a href="courses.html" class="text-light text-decoration-none">Digital Marketing</a></li>
+                        <li><a href="courses.html" class="text-light text-decoration-none">Mobile Development</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="text-light mb-2"><i class="bi bi-geo-alt-fill me-2"></i>123 Education Street, Tech City, TC 12345</p>
+                    <p class="text-light mb-2"><i class="bi bi-telephone-fill me-2"></i>(555) 123-4567</p>
+                    <p class="text-light mb-2"><i class="bi bi-envelope-fill me-2"></i>info@edutechinstitute.com</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-light mb-0">&copy; 2024 EduTech Institute. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
